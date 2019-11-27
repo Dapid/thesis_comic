@@ -1,0 +1,1000 @@
+    4  python checker.py 
+    5  rm ../data_sbrod/data_CASP11.h5
+    6  less error_CASP11.log 
+    7  /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/
+    8  ls /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/
+    9  ptrepack --complevel 9 --complib blosc:zlib data_CASP8.h5 data_CASP8_repack_blosczlib.h5
+   10  du -h *re*
+   11  cat log 
+   12  du -h *
+   13  du -h *rep*
+   14  pttree data_CASP8_repack_bloscsnappy.h5
+   15  pttree data_CASP8_repack_zlib.h5
+   16  du -h *rep* | sort -h
+   17  cat log 
+   18  ls
+   19  pcmanfm
+   20  ls *rep*
+   21  rm *rep*
+   22  less log 
+   23  rm log 
+   24  ipython
+   25  cd /run/media/david/gold/data_sbrod/CASP/data/CASP11
+   26  cd T0811
+   27  ls
+   28  cat 3D-Jigsaw-V5_1_TS1.lddt
+   29  cat *lddt | grep Global
+   30  less /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/eThread_TS4.lddt 
+   31  wc -l /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/*.lddt 
+   32  du /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/Seok-server_TS2.lddt
+   33  du -h /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/*.lddt
+   34  du /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/*.lddt
+   35  du /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/*.lddt | sort -n | head
+   36  du /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/*.lddt | sort -n | head -n 20
+   37  du /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/*.lddt | sort -n | head -n 30
+   38  du /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/*.lddt | sort -n | head -n 24
+   39  du /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/*.lddt | sort -n | head -n 24 | cut -f 2
+   40  python save_data_sbrod.py 
+   41  cd /run/media/david/Fedora-WS-Live-30-1-2/isolinux
+   42  md5sum vmlinuz 
+   43  less vmlinuz 
+   44  strings vmlinuz | less
+   45  uname -a
+   46  cd 
+   47  pwd
+   48  wc -l *log
+   49  less error_CASP11Stage1.log
+   50  less error_CASP5.log
+   51  rm ../data_sbrod/data_CASP5.h5 
+   52  less error_CASP7.log 
+   53  rm ../data_sbrod/data_CASP7.h5 
+   54  less error_CASP9.log 
+   55  less /run/media/david/gold/data_sbrod/CASP/data/CASP5/T0177/T0177TS007_1
+   56  cd ../data_sbrod/
+   57  ls
+   58  du -hs data_CASP6.h5 
+   59  rm data_CASP6.h5
+   60  cd  -
+   61  python save_data_sbrod.py 
+   62  python generate_rebuilt.py 
+   63  kill %1
+   64  python generate_rebuilt.py 
+   65  fg %1
+   66  kill %1
+   67  kill %2
+   68  jobs
+   69  sh -c "pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP11Stage2/T0848/T0848.pdb" > /dev/null 2>/dev/null
+   70  {pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP11Stage2/T0848/T0848.pdb} > /dev/null 2>/dev/null
+   71  less /run/media/david/gold/data_sbrod/CASP/data/CASP10Stage2/T0699/T0699.pdb
+   72  python generate_rebuilt.py 
+   73  ipython
+   74  python generate_rebuilt.py 
+   75  find /run/media/david/gold/data_sbrod/CASP/data/CASP10Stage2/ -name *rebuilt.pdb 
+   76  find /run/media/david/gold/data_sbrod/CASP/data/CASP10Stage2/ -name *rebuilt.pdb  | wc -l
+   77  ps aux | grep pulchra
+   78  find /run/media/david/gold/data_sbrod/CASP/data/ -name *rebuilt.pdb  | wc -l
+   79  cd sandbox/pd2_public/
+   80  ls
+   81  less README 
+   82  scons
+   83  ls bin/
+   84  less bin/placeholder.txt 
+   85  ls
+   86  ls src/
+   87  cppcheck src/
+   88  vi src/prodart_env/prodart_env.h
+   89  scons
+   90  vi src/prodart_env/prodart_env.h
+   91  scons
+   92  cd ..
+   93  rm -Rf pd2_public/
+   94  cd pd2_public/
+   95  ls
+   96  vi SConstruct 
+   97  scons
+   98  dmesg 
+   99  cd ../
+  100  ls
+  101  tar xf pulchra_306.tgz 
+  102  cd pulchra_306/
+  103  ls
+  104  cat LICENSE 
+  105  less README 
+  106  less /run/media/david/gold/data_sbrod/CASP/data/CASP5/T0177/T0177TS086_2_2
+  107  less /run/media/david/gold/data_sbrod/CASP/data/CASP5/T0177/T0177TS071_3
+  108  wc -l /run/media/david/gold/data_sbrod/CASP/data/CASP5/T0177/
+  109  wc -l /run/media/david/gold/data_sbrod/CASP/data/CASP5/T0177/*
+  110  less /run/media/david/gold/data_sbrod/CASP/data/CASP5/T0177/T0177TS202_1
+  111  cp /run/media/david/gold/data_sbrod/CASP/data/CASP5/T0177/T0177TS202_1 .
+  112  cat T0177TS202_1 | grep ATOM | grep CA > T0177TS202_1.ca.pdb
+  113  ./pulchra T0177TS202_1.ca.pdb
+  114  mv T0177TS202_1 T0177TS202_1.pdb
+  115  dssp T0177TS202_1.pdb T0177TS202_1.ca.rebuilt.pdb 
+  116  lddt T0177TS202_1.pdb T0177TS202_1.ca.rebuilt.pdb 
+  117  lddt -t -x T0177TS202_1.pdb T0177TS202_1.ca.rebuilt.pdb 
+  118  less T0177TS202_1.ca.rebuilt.pdb
+  119  ./pulchra T0177TS202_1.ca.pdb
+  120  lddt -t -x T0177TS202_1.pdb T0177TS202_1.ca.rebuilt.pdb 
+  121  pymol T0177TS202_1.pdb T0177TS202_1.ca.rebuilt.pdb 
+  122  TMscore T0177TS202_1.pdb T0177TS202_1.ca.rebuilt.pdb 
+  123  ls
+  124  less T0177TS007_1.rebuilt.pdb 
+  125  ./pulchra -h
+  126  ./pulchra -c -s T0177TS202_1.ca.pdb
+  127  ls
+  128  less T0177TS202_1.ca.rebuilt.pdb 
+  129  lddt T0177TS007_1.pdb  T0177TS202_1.ca.rebuilt.pdb
+  130  lddt T0177TS202_1.pdb  T0177TS202_1.ca.rebuilt.pdb
+  131  pymol T0177TS202_1.pdb  T0177TS202_1.ca.rebuilt.pdb
+  132  less /run/media/david/gold/data_sbrod/CASP/data/CASP10Stage2/T0715/panther_TS5
+  133  pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP10Stage2/T0677/T0677.pdb > /dev/null 2> /dev/null
+  134  pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP10Stage2/T0677/T0677.pdb > /dev/null 2>/dev/null
+  135  ls
+  136  ./pulchra T
+  137  less T
+  138  cat README 
+  139  ./pulchra -v T
+  140  less T
+  141  vi T
+  142  ./pulchra -v T
+  143  vi T
+  144  ls
+  145  less README 
+  146  gcc -g -o pulchra_debug pulchra.c pulchra_data.c -lm
+  147  ./pulchra_debug T
+  148  gdb ./pulchra_debug T
+  149  gdb "./pulchra_debug T"
+  150  gdb "pulchra_debug T"
+  151  gdb "pulchra_debug"
+  152  less README 
+  153  vi src/prodart_env/prodart_env.h 
+  154  cd ..
+  155  cd pulchra_306/
+  156  cp /run/media/david/gold/data_sbrod/CASP/data/CASP10Stage2/T0699/T0699.pdb .
+  157  cat T0699.pdb | grep ATOM > T
+  158  pulchra T
+  159  ls
+  160  head T
+  161  head T | py -x "x.index('F')
+  162  "
+  163  cat T0699.pdb | grep ATOM | py -x "x[:71].strip()" > T
+  164  pulchra T
+  165  less T
+  166  dssp T
+  167  less T
+  168  lusrmgr
+  169  grep add_replace *
+  170  vi pulchra.c 
+  171  less T
+  172  grep C T
+  173  grep C T | grep 39
+  174  grep C T | grep 39 | grep 12 | grep "-6"
+  175  grep C T | grep 39 | grep 12
+  176  cat T | grep CA > T_CA
+  177  pulchra T_CA
+  178  rm T_CA.rebuilt.pdb 
+  179  ls /fat
+  180  ls /fat/research
+  181  ls
+  182  cc -lto $CFLAGS -o pulchra pulchra.c pulchra_data.c -lm
+  183  cc -flto $CFLAGS -o pulchra pulchra.c pulchra_data.c -lm
+  184  ls
+  185  ./pulchra 
+  186  cp /run/media/david/gold/data_sbrod/CASP/data/CASP5/T0177/T0177TS007_1 .
+  187  ./pulchra T0177TS007_1 
+  188  less T0177TS007_1.rebuilt.pdb 
+  189  dssp T0177TS007_1.rebuilt.pdb 
+  190  pymol T0177TS007_1*
+  191  mv T0177TS007_1 T0177TS007_1.pdb
+  192  pymol T*
+  193  ls
+  194  cp pulchra ~/.local/bin/
+  195  less pulchra.c 
+  196  wc -l pulchra
+  197  wc -l pulchra.c 
+  198  less pulchra_data.c 
+  199  less rot_data_coords.h 
+  200  wc -l *h
+  201  less nco_data.h 
+  202  less pulchra.c 
+  203  ls
+  204  less pulchra.c 
+  205  ./pulchra 
+  206  ls
+  207  less T0177TS202_1.pdb
+  208  pulchra -v -s T0177TS202_1.pdb
+  209  less T0177TS202_1.rebuilt.pdb 
+  210  head T0177TS202_1.pdb T0177TS202_1.rebuilt.pdb 
+  211  pymol T0177TS202_1.pdb T0177TS202_1.rebuilt.pdb 
+  212  head T0177TS202_1.pdb T0177TS202_1.rebuilt.pdb 
+  213  ipython
+  214  history | tail
+  215  pulchra -v
+  216  pulchra -v -s T0177TS202_1.pdb
+  217  pulchra -v  T0177TS202_1.pdb
+  218  ipython
+  219  ls
+  220  cd david/
+  221  ls
+  222  cd ..
+  223  ls
+  224  vi make_backup.sh 
+  225  ls /*/research
+  226  cat *log | grep Big
+  227  python -c "import glob; print(glob.glob('/run/media/david/gold/data_sbrod/CASP/data/*'))"
+  228  python -c "import glob; print(glob.glob('/run/media/david/gold/data_sbrod/CASP/data/C*'))"
+  229  python save_data_sbrod.py 
+  230  cd ..
+  231  ls
+  232  cd data_sbrod/
+  233  ls
+  234  ptdump data_CASP10Stage2_repacked.h5
+  235  pttree data_CASP10Stage2_repacked.h5
+  236  ls *rep*
+  237  du -h *rep*
+  238  rm *rep*
+  239  less /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0811/3D-Jigsaw-V5_1_TS1.lddt
+  240  python generate_rebuilt.py 
+  241  ls /run/media/david/gold/data_sbrod/CASP/data/CASP12Stage2/T0911/Zhang-Server_TS1*
+  242  {pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP12Stage2/T0911/Zhang-Server_TS1 }
+  243  { pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP12Stage2/T0911/Zhang-Server_TS1 }
+  244  { pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP12Stage2/T0911/Zhang-Server_TS1; }
+  245  { pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP12Stage2/T0911/Zhang-Server_TS1 ; }
+  246  ls /run/media/david/gold/data_sbrod/CASP/data/CASP12Stage2/T0911/Zhang-Server_TS1*
+  247  cat *log | grep Big
+  248  grep Big *log
+  249  ls /run/media/david/gold/data_sbrod/CASP/data/C*
+  250  ls -d /run/media/david/gold/data_sbrod/CASP/data/C*
+  251  ls -d /run/media/david/gold/data_sbrod/CASP/data/C* | sorted -n
+  252  ls -d /run/media/david/gold/data_sbrod/CASP/data/C* | sort -n
+  253  ls /megalos/
+  254  cd /megalos/wikipedia/
+  255  ls
+  256  du -hs *
+  257  rm *
+  258  cd ..
+  259  rmdir wikipedia/
+  260  python generate_rebuilt.py 
+  261  ls /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0845/BioShell-server_TS1*
+  262  { pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP11/T0845/BioShell-server_TS1 ; }
+  263  ipython
+  264  python generate_rebuilt.py 
+  265  ls 
+  266  wc -l *rep*log
+  267  python
+  268  bash compute.sh 
+  269  python checker.py 
+  270  cd ../data_sbrod/
+  271  cp * ~/Dropbox/arne_lab/sbrod_data/
+  272  ls
+  273  cp *h5 ~/Dropbox/arne_lab/sbrod_data/
+  274  ls
+  275  ls *h5 | grep -v repa | wc -l
+  276  ls *h5 | grep rep | wc -l
+  277  lsof *rep*h5
+  278  lsof *rep*h5 | grep data | wc -l
+  279  python save_data_sbrod.py 
+  280  python save_data_sbrod.py 
+  281  less b 
+  282  python save_data_sbrod.py 
+  283  wc -l *rep*
+  284  less error_CASP11Stage1_repacked.log
+  285  less error_CASP6_repacked.log
+  286  less /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS223_1
+  287  dssp /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS223_1
+  288  less /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS223_1
+  289  vi /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS223_1
+  290  pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS223_1
+  291  dssp /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS223_1
+  292  vi /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS223_1
+  293  less error_CASP6_repacked.log 
+  294  less /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS039_4u
+  295  vi /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS039_4u
+  296  pulchra /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS039_4u
+  297  ls /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS039_4u*
+  298  less /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS039_4u.rebuilt.pdb 
+  299  pymol /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS039_4u.rebuilt.pdb 
+  300  wc -l *re*log
+  301  less error_CASP11_repacked.log 
+  302  cp ../data_sbrod/*rep*h5 ~/Dropbox/arne_lab/sbrod_data/
+  303  dssp /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS039_4u.rebuilt.pdb 
+  304  vi /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS039_4u.rebuilt.pdb 
+  305  dssp /run/media/david/gold/data_sbrod/CASP/data/CASP6/T0264/T0264TS039_4u.rebuilt.pdb 
+  306  less error_CASP11Stage1_repacked.log
+  307  dssp /run/media/david/gold/data_sbrod/CASP/data/CASP11Stage1/T0798/server10_TS1.lddt 
+  308  dssp /run/media/david/gold/data_sbrod/CASP/data/CASP11Stage1/T0798/server10_TS1
+  309  pymol /run/media/david/gold/data_sbrod/CASP/data/CASP11Stage1/T0798/server10_TS1
+  310  cp /run/media/david/gold/data_sbrod/CASP/data/CASP11Stage1/T0798/server10_TS1 m.pdb
+  311  pymol m.pdb 
+  312  cd ../data_sbrod/
+  313  ls *rep*
+  314  ptdump data_CASP11_repacked.h5
+  315  cd ../data_sbrod/
+  316  ptdump data_CASP6_repacked.h5 
+  317  rm data_CASP6_repacked.h5 
+  318  ptdump data_CASP11_repacked.h5 
+  319  rm data_CASP11_repacked.h5 
+  320  lsof *rep*h5
+  321  ptdump data_CASP10_repacked.h5 
+  322  rm data_CASP10_repacked.h5 
+  323  ipython
+  324  pip install -U networkx
+  325  cd
+  326  cd gits/PhD-Thesis/
+  327  ls
+  328  find . -name *pyt
+  329  find . -name *py
+  330  find . -name "*py"
+  331  cd ./machine_learning/code/
+  332  ls
+  333  cp settings.py /home/david/research/PQ4/analysis
+  334  less results_casp/classification:5_tricephalous_base_mixedTM_depth_8_l2_1e-14.s.json
+  335  cd san
+  336  cd sandbox/
+  337  diff one.txt two.txt 
+  338  diff --side-by-side --suppress-common-lines one.txt two.txt 
+  339  systemsettings5 
+  340   cd Dropbox/Books_and_papers/
+  341  cd Fe
+  342  ls
+  343  cd fencing/
+  344  ls
+  345  okular Carranza_de_la_philosophia_de_las_armas.pdf 
+  346  okular Tamariz1.PDF 
+  347  okular Carranza_de_la_philosophia_de_las_armas.pdf ç
+  348  cd 
+  349  cd Dropbox/Books_and_papers/
+  350  ls
+  351  okular the_elements_of_typographic_style.pdf 
+  352  python
+  353  cd 
+  354  leafpad Dropbox/SecretSecret.txt 
+  355  cd sandbox/
+  356  mkdir suppl
+  357  cd suppl/
+  358  wget https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fprot.25492&file=prot25492-sup-0001-suppinfo1.pdf
+  359  ls
+  360  less wget-log 
+  361  file downloadSupplement\?doi\=10.1002%2Fprot.25492 
+  362  less downloadSupplement\?doi\=10.1002%2Fprot.25492 
+  363  mkdir curl
+  364  cd curl/
+  365  curl "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fprot.25492&file=prot25492-sup-0001-suppinfo1.pdf"
+  366  curl https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fprot.25492&file=prot25492-sup-0001-suppinfo1.pdf&cookieSet=1
+  367  curl "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fprot.25492&file=prot25492-sup-0001-suppinfo1.pdf&cookieSet=1"
+  368  curl "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fprot.25492&file=prot25492-sup-0001-suppinfo1.pdf&cookieSet=0"
+  369  cd gits/PhD-Thesis/
+  370  ls
+  371  vi count_black.py 
+  372  python count_black.py 
+  373  python count_black.py  ~/Preview.pdf 
+  374  python
+  375  su
+  376  cd ..
+  377  ls
+  378  cd ..
+  379  ls
+  380  du -hs *
+  381  cd Do
+  382  cd Documents/
+  383  ls
+  384  duh
+  385  time vmtouch -t capitel.xcf 
+  386  time vmtouch -e capitel.xcf 
+  387  cd 
+  388  cd research/ProQ42/data
+  389  ls
+  390  du -h *
+  391  time vmtouch -t training_casp9_10.v2.h5 
+  392  time vmtouch -e training_casp9_10.v2.h5 
+  393  cd ../
+  394  cd data_sbrod/
+  395  cd ../data_loading_old/
+  396  python checker.py 
+  397  vi checker.py 
+  398  python checker.py 
+  399  vi checker.py 
+  400  python checker.py 
+  401  su
+  402  cd Dropbox/
+  403  cp impnattypo.sty /usr/share/texlive/texmf-dist/tex/latex/impnattypo/impnattypo.sty
+  404  su
+  405  python
+  406  shutter 
+  407  ors
+  408  xorsa
+  409  gnome-abrt 
+  410  xorsa
+  411  gnome-abrt 
+  412  cd Downloads/
+  413  ls orekit-*
+  414  java -jar orekit-10.0.jar 
+  415  file-roller orekit-data-master.zip 
+  416  pip install git@github.com:Dapid/spextractor.git
+  417  pip install git+git@github.com:Dapid/spextractor.git
+  418  pip install git+https://github.com/Dapid/spextractor.git
+  419  ls 09azm
+  420  ls 09azm*
+  421  ipython
+  422  cd
+  423  cd gits/
+  424  git clone git@github.com:Dapid/spextractor.git
+  425  cd spextractor/
+  426  git remote -v
+  427  git checkout fixes 
+  428  pip install -e .
+  429  ls
+  430  cd spectra_P48/
+  431  ls
+  432  cd 10fny/
+  433  ls
+  434  cd ..
+  435  less name_redsfhifts 
+  436  less ./13daa/Unsaved\ Document\ 1 
+  437  less ./10fel/10fel_20120427_Keck1_v1.ascii
+  438  rm ./10fel/10fel_20120427_Keck1_v1.ascii
+  439  cd ../spectra_P48/
+  440  find . -type f | xargs -I [] wc -l [] | py -x "x if x.startswith('2 ./') else None"
+  441  less./12agy/12agy_20120320_Keck2_v2.ascii
+  442  less ./12agy/12agy_20120320_Keck2_v2.ascii
+  443  rm ./12agy/12agy_20120320_Keck2_v2.ascii
+  444  find . -type f | xargs -I [] wc -l [] |sort -n | head
+  445  less ./12frn/12frn_20120716_Keck2_v2.ascii
+  446  less ./11qcj/11qcj_20120320_Keck2_v1.ascii
+  447  find . -type f | xargs -I [] wc -l [] |sort -n | less
+  448  cat  ./12frn/12frn_20120716_Keck2_v2.ascii ./11qcj/11qcj_20120320_Keck2_v1.ascii ./11qcj/11qcj_20120320_Keck2_v2.ascii ./11qju/11qju_20120320_Keck2_v1.ascii ./11qju/11qju_20120320_Keck2_v2.ascii ./11rkm/11rkm_20120320_Keck2_v1.ascii ./11rkm/11rkm_20120320_Keck2_v2.ascii ./12agy/12agy_20120320_Keck2_v1.ascii ./12bbm/12bbm_20120320_Keck2_v1.ascii ./12bok/12bok_20120320_Keck2_v1.ascii ./12bro/12bro_20120320_Keck2_v1.ascii ./12bro/12bro_20120320_Keck2_v2.ascii ./12bro/12bro_20120320_Keck2_v3.ascii ./12btr/12btr_20120320_Keck2_v2.ascii ./12bvh/12bvh_20120320_Keck2_v1.ascii ./12hxz/12hxz_20121014_Keck2_v1.ascii ./12iqw/12iqw_20121014_Keck2_v1.ascii ./12jaa/12jaa_20121014_Keck2_v1.ascii ./12jma/12jma_20121014_Keck2_v1.ascii ./12jsi/12jsi_20121014_Keck2_v1.ascii ./10fel/10fel_20120427_Keck1_v1.ascii
+  449  rm  ./12frn/12frn_20120716_Keck2_v2.ascii ./11qcj/11qcj_20120320_Keck2_v1.ascii ./11qcj/11qcj_20120320_Keck2_v2.ascii ./11qju/11qju_20120320_Keck2_v1.ascii ./11qju/11qju_20120320_Keck2_v2.ascii ./11rkm/11rkm_20120320_Keck2_v1.ascii ./11rkm/11rkm_20120320_Keck2_v2.ascii ./12agy/12agy_20120320_Keck2_v1.ascii ./12bbm/12bbm_20120320_Keck2_v1.ascii ./12bok/12bok_20120320_Keck2_v1.ascii ./12bro/12bro_20120320_Keck2_v1.ascii ./12bro/12bro_20120320_Keck2_v2.ascii ./12bro/12bro_20120320_Keck2_v3.ascii ./12btr/12btr_20120320_Keck2_v2.ascii ./12bvh/12bvh_20120320_Keck2_v1.ascii ./12hxz/12hxz_20121014_Keck2_v1.ascii ./12iqw/12iqw_20121014_Keck2_v1.ascii ./12jaa/12jaa_20121014_Keck2_v1.ascii ./12jma/12jma_20121014_Keck2_v1.ascii ./12jsi/12jsi_20121014_Keck2_v1.ascii ./10fel/10fel_20120427_Keck1_v1.ascii
+  450  cat  ./12frn/12frn_20120716_Keck2_v2.ascii ./11qcj/11qcj_20120320_Keck2_v1.ascii ./11qcj/11qcj_20120320_Keck2_v2.ascii ./11qju/11qju_20120320_Keck2_v1.ascii ./11qju/11qju_20120320_Keck2_v2.ascii ./11rkm/11rkm_20120320_Keck2_v1.ascii ./11rkm/11rkm_20120320_Keck2_v2.ascii ./12agy/12agy_20120320_Keck2_v1.ascii ./12bbm/12bbm_20120320_Keck2_v1.ascii ./12bok/12bok_20120320_Keck2_v1.ascii ./12bro/12bro_20120320_Keck2_v1.ascii ./12bro/12bro_20120320_Keck2_v2.ascii ./12bro/12bro_20120320_Keck2_v3.ascii ./12btr/12btr_20120320_Keck2_v2.ascii ./12bvh/12bvh_20120320_Keck2_v1.ascii ./12hxz/12hxz_20121014_Keck2_v1.ascii ./12iqw/12iqw_20121014_Keck2_v1.ascii ./12jaa/12jaa_20121014_Keck2_v1.ascii ./12jma/12jma_20121014_Keck2_v1.ascii ./12jsi/12jsi_20121014_Keck2_v1.ascii ./10fel/10fel_20120427_Keck1_v1.ascii
+  451  vi ../spectra_P48/10fny/10fny_20100415_Keck1_v1.ascii
+  452  leafpad ../spectra_P48/10fny/10fny_20100415_Keck1_v1.ascii
+  453  ipython
+  454  ls  ../OpenSceneGraph-OpenSceneGraph-3.4.1/src/osg/ApplicationUsage.cpp 
+  455  shutter 
+  456  ipython
+  457  cd CASP11
+  458  ls
+  459  find . -emtpy
+  460  find . -empty
+  461  ls T0759/
+  462  ls T0858
+  463  lesss T0858/BAKER-ROSETTASERVER_TS4.lddt 
+  464  less T0858/BAKER-ROSETTASERVER_TS4.lddt 
+  465  ls T0768/
+  466  ls
+  467  ls T0762
+  468  ls
+  469  ls T0760
+  470  ipython
+  471  cd T0759
+  472  ls
+  473  ls *lddt
+  474  les *lddt
+  475  less *lddt
+  476  ls *lddt
+  477  less MUFOLD-Server_TS3.lddt 
+  478  less BioS*lddt
+  479  cd /run/media/david/gold/
+  480  ls
+  481  cd data_sbrod/
+  482  ls
+  483  cd CASP
+  484  ls
+  485  cd data/
+  486  ls
+  487  bash compute.sh 
+  488  texstudio 
+  489  cd bioinfo/code/
+  490  python apc.py 
+  491  okular ~/Dropbox/arne_lab/thesis/Preview.pdf
+  492  ls
+  493  rm acknoledgements.tex 
+  494  du -h ack*
+  495  rm ack*
+  496  git status 
+  497  grep -R tiny *
+  498  grep -R footn *
+  499  grep "\sidenote{\" *
+  500  grep -R "\sidenote{\" *
+  501  grep -R "\sidenote{\ " *
+  502  grep -R "\sidenote{\\" *
+  503  grep -E -R "\sidenote{\\" *
+  504  grep -E -R "\sidenote{\s" *
+  505  grep -E -R "\sidenote{\f" *
+  506  grep -E -R "\sidenote{" *
+  507  grep -R "\sidenote{" *
+  508  grep -R "sidenote{" *
+  509  grep -R "sidenote{\\" *
+  510  grep -R "sidenote{" * | grep "{\"
+  511  grep -R "sidenote{\\" * | grep size
+  512  grep -R "sidenote{" * | grep size
+  513  grep -R "footn{" * 
+  514  grep -R "footn" * 
+  515  gitk 
+  516  git status 
+  517  git add main.tex machine_learning/machine_learning.tex machine_learning/deep_learning.tex intro/intro.tex intro/sammanfatning.tex bioinfo/proteins.tex bioinfo/bioinfo.tex 
+  518  git commit -m "."
+  519  git push
+  520  git remote -v
+  521  git status 
+  522  git diff machine_learning/machine_learning.tex
+  523  git add machine_learning/machine_learning.tex 
+  524  git commit -m "Reviewing"
+  525  git status 
+  526  git add machine_learning/deep_learning.tex 
+  527  git commit -m "."
+  528  git diff intro/intro.tex
+  529  git add intro/intro.tex 
+  530  git diff intro/abstract.tex
+  531  git add intro/abstract.tex 
+  532  git commit -m "--"
+  533  git push
+  534  git status 
+  535  rm main_baskervillef.pdf 
+  536  rm fonts.txt 
+  537  git diff main.tex
+  538  git add main.tex
+  539  git status 
+  540  git diff papers.tex
+  541  git add papers.tex 
+  542  git diff references.bib
+  543  git add references.bib 
+  544  git commit -m "."
+  545  git push
+  546  git add acknowledgements.tex 
+  547  git commit -m "ack"
+  548  git push
+  549  git status 
+  550  git add references.bib machine_learning/machine_learning.tex 
+  551  git commit -m "-"
+  552  git push
+  553  git status 
+  554  okular machine_learning/figures/tree.pdf
+  555  git status 
+  556  git add references.bib machine_learning/machine_learning.tex machine_learning/figures/tree.pdf
+  557  git add machine_learning/code/_plot_tree.py 
+  558  git status 
+  559  git commit -m "Fix figure"
+  560  git push
+  561  pcmanfm
+  562  git status
+  563  git diff papers.tex
+  564  git add papers.tex main.tex 
+  565  git status 
+  566  git add acronyms.tex bioinfo/bioinfo.tex bioinfo/proteins.tex 
+  567  git commit -m "."
+  568  git push
+  569  time make
+  570  git pull
+  571  time make
+  572  git pull
+  573  time make
+  574  vi count_black.py 
+  575  pcmanfm
+  576  git status 
+  577  git add intro/abstract.tex 
+  578  git commit -m ".
+  579  "
+  580  git add acronyms.tex intro/sammanfatning.tex 
+  581  git commit -m "."
+  582  git push
+  583  less main.tex 
+  584  texstudio main.tex 
+  585  git status 
+  586  git add acronyms.tex count_black.py main.tex papers.tex title.tex 
+  587  git commit -m "."
+  588  git push
+  589  gitk 
+  590  python count_black.py ~/Dropbox/arne_lab/thesis/Preview.pdf 
+  591  less count_black.py 
+  592  git status 
+  593  git add bioinfo/bioinfo.tex bioinfo/code/apc.py bioinfo/figures/apc.pdf 
+  594  git commit -m "-"
+  595  git push
+  596  git status 
+  597  git add bioinfo/bioinfo.tex 
+  598  git commit -m "-"
+  599  git push
+  600  git status 
+  601  git add machine_learning/code/gp.py  machine_learning/figures/sin_samples.pdf  machine_learning/figures/sin_toy.pdf machine_learning/figures/sin_toy_gapped.pdf
+  602  git commit -m "darker shading"
+  603  git push
+  604  git pull
+  605  git status 
+  606  git diff intro/sammanfatning.tex
+  607  git add intro/sammanfatning.tex 
+  608  git commit -m "spacing"
+  609  git diff references.bib
+  610  git add references.bib 
+  611  git status 
+  612  git fiff bioinfo/bioinfo.tex
+  613  fuck
+  614  got doff bioinfo/bioinfo.tex 
+  615  fuck
+  616  git diff bioinfo/bioinfo.tex 
+  617  git add bioinfo/bioinfo.tex 
+  618  git status 
+  619  git diff bioinfo/proteins.tex
+  620  git add bioinfo/proteins.tex 
+  621  git diff main.tex
+  622  git checkout main.tex
+  623  git status 
+  624  git diff machine_learning/machine_learning.tex
+  625  git add machine_learning/machine_learning.tex 
+  626  git commit -m "-"
+  627  git push
+  628  time make
+  629  git status 
+  630  git diff bioinfo/proteins.tex
+  631  git status 
+  632  git diff bioinfo/bioinfo.tex
+  633  git add bioinfo/bioinfo.tex 
+  634  git diff bioinfo/proteins.tex
+  635  git add bioinfo/proteins.tex 
+  636  git commit -m "."
+  637  git status 
+  638  git push
+  639  git pull
+  640  git status 
+  641  git pull
+  642  pcmanfm
+  643  python count_black.py /home/david/Dropbox/arne_lab/thesis/Preview.pdf 
+  644  cat count_black.py | grep gs
+  645  gs -o - -sDEVICE=inkcov /home/david/Dropbox/arne_lab/thesis/Preview.pdf | head
+  646  ipython
+  647  python count_black.py /home/david/Dropbox/arne_lab/thesis/Preview.pdf
+  648  git status 
+  649  git add main.tex  machine_learning/machine_learning.tex machine_learning/deep_learning.tex bioinfo/proteins.tex 
+  650  git add intro/inner_cover.pdf 
+  651  less main.tex 
+  652  mv title2b.tex title2.tex
+  653  git add title2.tex 
+  654  vi main.tex 
+  655  git status 
+  656  git add main.tex 
+  657  make
+  658  git commit -m "-"
+  659  git push
+  660  okular main.pdf 
+  661  cd gits/PhD-Thesis/
+  662  git pull
+  663  time make
+  664  /usr/bin/time make
+  665  time sleep 1
+  666  ls
+  667  time vmtouch -t main.pdf 
+  668  time vmtouch -e main.pdf 
+  669  time vmtouch -t main.pdf 
+  670  du -hs * 
+  671  less main.tex 
+  672  ls
+  673  ls *wor*
+  674  less mywork.tex
+  675  ls
+  676  ls *wor*tex
+  677  ls *wor*
+  678  ls *wor*ex
+  679  ls *wor*e*
+  680  ls *wor*
+  681  ls *wor* | tail -n 1
+  682  ls *wor* | tail -n 1 | xargs  less
+  683  ls
+  684  git status 
+  685  git diff main.tex
+  686  pcmanfm
+  687  ls
+  688  cd machine_learning/code/
+  689  ls
+  690  less isotonic.py 
+  691  git status 
+  692  cd -
+  693  git status
+  694  git diff machine_learning/deep_learning.
+  695  git diff machine_learning/deep_learning.tex
+  696  git add machine_learning/deep_learning.tex 
+  697  git add acronyms.tex main.tex references.bib 
+  698  git add work/mywork.tex 
+  699  git commit -m "."
+  700  git push
+  701  time make
+  702  okular main.pdf 
+  703  git pull
+  704  cd ../../
+  705  find . -name *turkey*
+  706  find . -iname *turkey*
+  707  bash set_up.sh 
+  708  dropbox status
+  709  pip list --outdated
+  710  pip install -U pip
+  711  pip install -U zipp numpy pythran opt-einsum Keras jax jaxlib tqdm virtualenv svtplay-dl
+  712  pip list --outdated
+  713  pip install -U ipython jax pythran 
+  714  dnf  info telepathy-glib
+  715  reboot 
+  716  python save_data_sbrod.py 
+  717  python
+  718  ls /tmp/tmps7mnvrhw/source.c+
+  719  ls /tmp/tmps7mnvrhw/source.c
+  720  ls
+  721  mkdir testing
+  722  cd testing/
+  723  vi a.py
+  724  pythran a.py 
+  725  vi b.py
+  726  pythran b.py 
+  727  pythran -v b.py 
+  728  vi ~/.pythranrc 
+  729  pythran -v b.py 
+  730  ls
+  731  vi /home/david/.virtualenvs/py36/lib/python3.6/site-packages/pythran/pythran.cfg 
+  732  vi /home/david/.virtualenvs/py36/lib/python3.6/site-packages/pythran/pythran-linux.cfg 
+  733  cp /home/david/.virtualenvs/py36/lib/python3.6/site-packages/pythran/pythran-linux.cfg /home/david/.config/.pythranrc
+  734  vi /home/david/.config/.pythranrc 
+  735  pythran -v b.py 
+  736  cat b.py 
+  737  cp b.py ~/Dropbox/
+  738  vi /home/david/.config/.pythranrc 
+  739  pythran -v b.py 
+  740  pythran b.py 
+  741  vi /home/david/.config/.pythranrc 
+  742  pythran b.py 
+  743  cd ..
+  744  ls
+  745  ls *so
+  746  rm *so
+  747  pip show pythran
+  748  pip install -U pythran
+  749  pythran solver.py 
+  750  ipython
+  751  ls
+  752  time python runner.py 
+  753  git status 
+  754  git diff runner.py
+  755  git diff solver.py
+  756  git add -p solver.py 
+  757  git commit -m "Cleanup"
+  758  git diff solver.py
+  759  git add -p solver.py 
+  760  git commit -m "Fix bug in min"
+  761  git status 
+  762  git add runner.py solver.py 
+  763  git commit -m "Optional verbosity"
+  764  git push
+  765  git status 
+  766  git diff solver.py
+  767  git status 
+  768  git add solver.py simple_solver.py simple_solver_2.py 
+  769  git commit -m "Alternative, plain solvers"
+  770  git push
+  771   time python runner.py 
+  772  ls
+  773  cd research/sudoku/
+  774  time python solver.py 
+  775  time python runner.py 
+  776  pythran solver.py 
+  777  time python runner.py 
+  778  pythran solver.py 
+  779  time python runner.py 
+  780  pythran solver.py 
+  781  time python runner.py 
+  782  pythran solver.py 
+  783  clear
+  784  pythran solver.py 
+  785  git init 
+  786  ls
+  787  git add runner.py solver.py 
+  788  cd ..
+  789  cd -
+  790  git status 
+  791  git commit -m "initial commit"
+  792  vi .gitignore
+  793  git add .gitignore 
+  794  git commit -m "gitignoring"
+  795  git status
+  796  git remote add origin git@github.com:Dapid/toy_sudoku_solver.git
+  797  git pull
+  798  git pull origin master
+  799  git push origin master
+  800  git status 
+  801  git pull --allow-unrelated-histories
+  802  git pull --allow-unrelated-histories origin master
+  803  git status 
+  804  git push
+  805      git push --set-upstream origin master
+  806  pythran simple_solver.py 
+  807  clear
+  808  time pythran simple_solver.py 
+  809  time pythran simple_solver_2.py 
+  810  ld
+  811  ls
+  812  ipython
+  813  time python runner.py 
+  814  cd 
+  815  vi .pythranrc 
+  816  cd -
+  817  time pythran simple_solver_2.py 
+  818  time pythran solver.py 
+  819  cd /megalos/
+  820  cd proq_tensor/
+  821  ls
+  822  cd raw_input/
+  823  ls
+  824  cd structures_fixed/
+  825  ls
+  826  cd input/
+  827  ls
+  828  cd cameo-no_short/
+  829  ls
+  830  ls | head
+  831  cd 2ML1_A
+  832  ls
+  833  ls server11-model-1/
+  834  ls server11-model-1/server11-model-1.pdb
+  835  ls ../../..
+  836  ls ../../../..
+  837  ls ../../../../native_structures/cameo/2ML1_A.pdb
+  838  TMscore server11-model-1/server11-model-1.pdb ../../../../native_structures/cameo/2ML1_A.pdb
+  839  TMscore server11-model-1/server11-model-1.pdb ../../../../native_structures/cameo/2ML1_A.pdb | grep GDT
+  840  TMscore server11-model-1/server11-model-1.pdb ../../../../native_structures/cameo/2ML1_A.pdb | grep GDT | grep TS
+  841  cd ..
+  842  find . -name *pdb | wc -l
+  843  ls | head
+  844  time TMscore 2ML1_A/server43-model-1/server43-model-1.pdb ../../../native_structures/cameo/2ML1_A.pdb
+  845  python
+  846  cd ../../
+  847  cd ../
+  848  python compute_gdt_ts.py 
+  849  ls native_structures/cameo/
+  850  ls structures_fixed/
+  851  python compute_gdt_ts.py 
+  852  ls ~/.virtualenvs/
+  853  python compute_gdt_ts.py 
+  854  ls
+  855  less gdt_ts_cameo 
+  856  python compute_gdt_ts.py 
+  857  du -h gdt_ts_cameo 
+  858  cp gdt_ts_cameo ~/Dropbox/arne_lab/
+  859  pip list --outdated
+  860  pip install -U jupyter-client visdom svtplay-dl importlib-metadata
+  861  ls
+  862  cp compute_gdt_ts.py compute_gdt_ts_casp.py
+  863  vi compute_gdt_ts_casp.py 
+  864  python compute_gdt_ts_casp.py 
+  865  kill %1
+  866  ls
+  867  less gdt_ts_casp11 
+  868  vi compute_gdt_ts_casp.py 
+  869  screen
+  870  cd /megalos/
+  871  cd proq_tensor/
+  872  ls
+  873  cd raw_input/
+  874  ls
+  875  vi compute_gdt_ts.py
+  876  TMscore structures_fixed/input/cameo-no_short/4OB1_A/server9-model-2/server9-model-2.pdb native_structures/cameo/4OB1_A.pdb
+  877  lddt structures_fixed/input/cameo-no_short/4OB1_A/server9-model-2/server9-model-2.pdb native_structures/cameo/4OB1_A.pdb
+  878  vi compute_gdt_ts.py
+  879  ls
+  880  less gdt_ts_cameo 
+  881  lsof *
+  882  ls structures_fixed/
+  883  ls structures_fixed/input/
+  884  ls native_structures/casp11/
+  885  ls
+  886  cat compute_gdt_ts_casp.py | grep casp11
+  887  ls structures_fixed/input/casp11-no_short/*/*/*.pdb | head
+  888  ls structures_fixed/input/casp11-no_short/T0759/3D-Jigsaw-V5_1_TS1/
+  889  time pythran simple_solver_2.py 
+  890  time pythran solver.py 
+  891  vi ~/.config/.pythranrc 
+  892  pip list --outdated
+  893  time pythran solver
+  894  time pythran solver.py 
+  895  time pythran solver.py 
+  896  cd testing/
+  897  vi c.py
+  898  pythran c.py 
+  899  vi c.py
+  900  pythran c.py 
+  901  vi c.py
+  902  pythran c.py 
+  903  vi c.py
+  904  pythran c.py 
+  905  cd ..
+  906  time pythran simple_solver_2.
+  907  time pythran simple_solver_2.py 
+  908  vi times.txt
+  909  git status 
+  910  git push
+  911  time pythran solver.py 
+  912  ls
+  913  less simple_solver_2.py 
+  914  ipython
+  915  cat  runner.py 
+  916  time pythran solver.py 
+  917  time pythran simple_solver_2.py 
+  918  ls
+  919  time python simple_solver_2.py 
+  920  vi runner.py 
+  921  cat simple_solver_2.
+  922  cat simple_solver_2.py 
+  923  ipython
+  924  ls 
+  925  time pythran simple_solver.py 
+  926  cat simple_solver.
+  927  cat simple_solver.py 
+  928  time pythran solver.py 
+  929  clear
+  930  ipython
+  931  cd Dropbox/migraines_diary/
+  932  python main.py 
+  933  bash set_up.sh 
+  934  su
+  935  htop 
+  936  python compute_gdt_ts_casp.py 
+  937  docker pull nanjiang/proq3d
+  938  ls
+  939  df -h
+  940  cd /run/media/david/gold
+  941  ls
+  942  cd kebnekaise/
+  943  ls
+  944  cd ..
+  945  mkdir kebnekaise_mirco
+  946  cd kebnekaise_mirco/
+  947  vi download.sh
+  948  bash download.sh 
+  949  ls
+  950  cd 2017-02-28_pfam_metagenomics
+  951  ls
+  952  ls data 
+  953  file data 
+  954  cd ../
+  955  ls
+  956  file glob 
+  957  rm glob 
+  958  mkdir glob
+  959  cd glob/
+  960  cp ../download.sh .
+  961  vi download.sh 
+  962  bash download.sh 
+  963  ls
+  964  vi download.sh 
+  965  rm glob 
+  966  bash download.sh 
+  967  df -h .
+  968  ls
+  969  ls 2014-10-07_pfam_predictions
+  970  rm 2014-10-07_pfam_predictions/ID*
+  971  ls
+  972  ls 2014-10-07_pfam_predictions/
+  973  ls /run/media/david/gold/kebnekaise_mirco/glob/2014-10-07_pfam_predictions/29.0/*/*a3m | head
+  974  less /home/david/gits/spextractor/spextractor/
+  975  less /home/david/gits/spextractor/spextractor/spextractor.py 
+  976  cd /megalos/proq_tensor/
+  977  ls
+  978  cd raw_input/
+  979  ls
+  980  cd native_structures/
+  981  ls
+  982  cd ..
+  983  tar -cf native_structures.tar native_structures/
+  984  bg
+  985  du -hs native_structures
+  986  jobs
+  987  xz native_structures.tar 
+  988  du -hs native_structures.tar.xz 
+  989  mv native_structures.tar.xz ~/Dropbox/arne_lab/
+  990  cd gits/
+  991  git clone https://github.com/googlefonts/ibarrareal.git
+  992  cd ibarrareal/
+  993  ls
+  994  cd sources/
+  995  ls
+  996  less IbarraReal-Regular.glyphs 
+  997  cd
+  998  file-roller Ibarra-Real.zip 
+  999  ssh ae17b
+ 1000  cd Dropbox/arne_lab/thesis_comic/final/scans/originals/
+ 1001  ls
+ 1002  okular  201909231126.pdf 
+ 1003  history | split

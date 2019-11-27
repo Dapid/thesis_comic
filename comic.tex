@@ -1,0 +1,122 @@
+\PassOptionsToPackage{cmyk, hyperref, dvipsnames}{xcolor}
+\PassOptionsToPackage{x-4}{pdfx}  % X is printing standard. 5g is the latest supported version.
+\documentclass[fontsize=10pt, paper=a5, final]{scrbook} % KOMA-Script book
+
+%\usepackage[cmyk, hyperref, dvipsnames]{xcolor} %The two first options are for pdf-x 
+\usepackage[x-4]{pdfx} % X is printing standard. 5g is the latest supported version.
+
+\usepackage{fontspec}
+
+
+\usepackage{microtype}
+\pagestyle{empty}
+\raggedright
+\usepackage[hyphenation,lastparline,nosingleletter]{impnattypo} %draft
+\frenchspacing   % Do not include extra space after sentences.
+
+\usepackage{xpatch} %Adjust the spacing in smallcaps
+\xapptocmd{\scshape}{\spaceskip=2\fontdimen2\font plus 2\fontdimen3\font minus \fontdimen4\font	\xspaceskip=0\fontdimen7\font}{}{}
+
+\usepackage[spanish,british]{babel}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes,positioning}
+
+\usepackage[outer=0mm, inner=0mm, top=0mm, bottom=0mm]{geometry}
+\usepackage{placeins}
+
+\usepackage{ccicons}
+
+\frenchspacing   % Do not include extra space after sentences.
+
+\usepackage{enumitem}
+\setlist{leftmargin=0mm}% Remove indentation in bulletpoints
+%\setlist[itemize]{before=\csname par\endcsname\raggedright,	partopsep=0pt}
+\setlist[itemize]{partopsep=0pt}
+
+
+\def\helplines{0}
+
+\setmainfont{tex-gyre-pagella}
+
+
+%ebgaramond
+%Cardo
+\newcommand{\english}[1]{\fontspec{imfellenglish} \large \color{Maroon} #1}
+\newcommand{\spanish}[1]{\begin{otherlanguage}{spanish}
+	\fontspec{IbarraReal} \large \color{RoyalBlue} #1
+\end{otherlanguage}}
+
+\newcommand{\sketchpage}[1]{\begin{figure}
+	\includegraphics[width=\pagewidth]{sketches/#1.pdf}
+\end{figure}}
+
+\newcommand{\doindent}{\hspace{1em}}
+\newcommand{\N}{0.995}
+
+\hyphenation{de-ac-ti-va-tes}
+
+\begin{document}
+
+\input{cover}
+
+% % image done
+% %--- image missing
+%
+%
+
+\input{trykort}
+\input{intro}
+
+
+\input{proteins_as_machines.tikz} %
+\input{proteins_as_tasks} %
+%
+\input{broken_machine.tikz} %
+\input{disease_signal.tikz} %
+%
+\input{protein_chain.tikz} %
+\input{audience.tikz} %
+%
+\input{sequencing.tikz} %
+\input{structuring.tikz} %
+%
+
+\input{how_to_fold.tikz} %
+\input{template_and_abinitio.tikz} %
+%
+\input{contacts.tikz} %
+\input{msa.tikz} %
+%
+
+\input{mqa_machine_learning_a.tikz} % ----
+\input{mqa_machine_learning_b.tikz} % ----
+
+%
+
+\input{papers.tikz} %
+\input{paper_I.tikz} %
+%
+\input{paper_IIa.tikz} %
+\input{paper_IIb.tikz} %
+
+%
+\input{paper_IIIa.tikz} %
+\input{paper_IIIb.tikz} %
+
+%
+\input{paper_IV.tikz} %
+\input{paper_V.tikz} %
+
+
+\input{explanation.tikz}
+\input{fonts.tikz}
+
+% Final page
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{scans/back_cover.png}
+\end{figure}
+
+\end{document}

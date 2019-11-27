@@ -1,0 +1,32 @@
+\begin{center}
+\begin{tikzpicture}
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+        \if\helplines1
+        	\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (\N, \N);
+        \else
+            \path[help lines,xstep=.1,ystep=.1] (0,0) grid (\N, \N);
+        \fi
+        \node[text width=0.4\pagewidth, align=center, anchor=north west](titleen) at (0.075, 0.7){\english{\Huge  Introduction}};
+		\node[text width=0.4\pagewidth, align=justify, below=1cm of titleen] {\english{This is an attempt to explain my thesis in a way that is accessible for everyone.
+		
+		\doindent The comic, just as the thesis, is structured in the following way:
+		
+		\begin{itemize}
+		\item First, some background. I will explain what proteins are, why we care, and the problems I worked on.
+		\item Then, the papers I published during my PhD. Brief summary of the content, and what I think is the most important message from each.
+		\end{itemize}}};
+		
+		
+		\node[text width=0.4\pagewidth, align=center, anchor=north west] (titlees) at (0.525, 0.72) {\spanish{\Huge Introdución}};
+		\node[text width=0.4\pagewidth, align=justify, below =1cm of titlees] {\spanish{Este comic es un intento de explicar mi tesis de una forma accessible a todos.
+		
+		\doindent Al igual que la tesis que acompaña, el comic está dividido en dos partes:
+		
+		\begin{itemize}
+		\item Primero, algo información básica. Explicaré qué son las proteínas y por qué nos importan, además de presentar los problemas en los que trabajé.
+		\item Después, los artículos publicados. Un breve resumen de cada uno, explicando lo que, en mi opinión, es el mensaje más importante de cada uno.
+		\end{itemize}}};
+    \end{scope}
+
+\end{tikzpicture}
+\end{center}

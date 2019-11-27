@@ -1,0 +1,18 @@
+\begin{center}
+\begin{tikzpicture}
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+        \if\helplines1
+        	\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (\N, \N);
+        \else
+            \path[help lines,xstep=.1,ystep=.1] (0,0) grid (\N, \N);
+        \fi
+        \node[text width=0.4\pagewidth, align=center, anchor=north west](titleen) at (0.075, 0.7) {\english{\Huge The papers}};
+		\node[text width=0.4\pagewidth, align=justify, anchor=north west] at (0.075, 0.6) {\english{In this section I will try to summarise the highlights of the papers included in my thesis, from I to V.}};
+		
+		
+		\node[text width=0.4\pagewidth, align=center, anchor=north west] (titlees) at (0.525, 0.4) {\spanish{\Huge Los artículos}};
+		\node[text width=0.4\pagewidth, align=justify, anchor=north west] at (0.525, 0.3) {\spanish{En esta sección, intentaré resumir los aspectos más interesantes de los artículos incluídos en mi tesis, del I al V.}};
+    \end{scope}
+
+\end{tikzpicture}
+\end{center}

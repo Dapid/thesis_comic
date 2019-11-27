@@ -1,0 +1,18 @@
+\begin{center}
+
+\begin{tikzpicture}
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+        \node[anchor=south west,inner sep=0, draw] (image)  at (0.35, 0.3) {\includegraphics[height=0.6\pageheight]{scans/cover.pdf}};
+    	\if\helplines1
+        	\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (\N,\N);
+        \fi
+        \if\helplines0
+        	\path[help lines,xstep=.1,ystep=.1] (0,0) grid (\N,\N);
+        \fi
+        
+        \node[align=left, anchor=west] (en) at (0.1, 0.1) {\english{\Huge A visual introduction to my thesis.}};
+        \node[align=left, anchor=west] (es) at (0.1, 0.2)  {\spanish{\Huge Una introducción visual a mi tésis.}};
+        
+    \end{scope}
+\end{tikzpicture}
+\end{center}

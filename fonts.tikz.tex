@@ -1,0 +1,21 @@
+\begin{center}
+\begin{tikzpicture}
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+        \if\helplines1
+        	\path[draw, help lines,xstep=.1,ystep=.1] (0,0) grid (\N, \N);
+        \else
+            \path[help lines,xstep=.1,ystep=.1] (0,0) grid (\N, \N);
+        \fi
+        \node[text width=0.4\pagewidth, align=justify, anchor= west](titleen) at (0.075, 0.5){\english{\normalsize The English text is set in \emph{IM Fell English}, a type cut by Christoffel van Dijck and Robert Granjon. In 1672, John Fell, Bishop of Oxford, bought them for the printer in Oxford.
+		Nowadays the are not only the oldest surviving punches in England, but are still being used in new books.
+         
+        \doindent The digital incarnation was created by Igino Marini between 2000 and 2006.}};
+		
+		
+		\node[text width=0.401\pagewidth, align=justify, anchor= west] (titlees) at (0.525, 0.5) {\spanish{\normalsize \oldstylenums El texto en español está tipografiado en una fuente grabada por  Jerónimo Antonio Gil en el siglo XVIII. Fue seleccionada para la edición de \emph{El Quijote} publicada por la Real Academia en \oldstylenums{1780}. 
+		
+		\doindent La versión digital, llamada \emph{Ibarra Real} fue resucitada por la Calcografía Nacional y José María Ribagorda en el año \oldstylenums{2005}.}};
+    \end{scope}
+
+\end{tikzpicture}
+\end{center}

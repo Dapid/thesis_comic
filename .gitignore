@@ -1,0 +1,9 @@
+*.log
+*.synctex.gz
+comic.pdf
+*bbl
+*aux
+*blg
+*fdb_latexmk
+*fls
+pdfx.xmpi
