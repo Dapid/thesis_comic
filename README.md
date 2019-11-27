@@ -1,4 +1,4 @@
-= A visual introduction to my thesis =
+# A visual introduction to my thesis
 
 This is a summary of my PhD thesis, in comic version. The full-length feature book can be found [here][1]
 
